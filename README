@@ -2,6 +2,10 @@
 Пример интеграции Bugzilla и Sphinx (www.sphinxsearch.com)
 Тестировано для Bugzilla 3.2, Sphinx 0.9.9
 
+etc/sphinx.conf     конфиг sphinx
+html/index.php      код страницы поиска
+html/api/sphinxapi.php файл из стандартной поставки sphinx - api для php
+
 === Установка ===
 
 Доступ к БД bugzilla:
