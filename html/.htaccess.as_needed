@@ -1,0 +1,3 @@
+AddHandler php5-script .php
+Options -Indexes
+AddType text/html .php

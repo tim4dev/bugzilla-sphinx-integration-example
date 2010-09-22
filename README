@@ -1,0 +1,16 @@
+
+Пример интеграции Bugzilla и Sphinx (www.sphinxsearch.com)
+Тестировано для Bugzilla 3.2, Sphinx 0.9.9
+
+=== Установка ===
+
+Доступ к БД bugzilla:
+
+GRANT SELECT, CREATE TEMPORARY TABLES ON bugs.* TO sphinx@localhost IDENTIFIED BY 'sphinx-password';
+GRANT INSERT ON bugs.* TO sphinx@localhost;
+FLUSH PRIVILEGES;
+
+Настроить секцию "setup" в index.php
+
+Изменить шаблон bugzilla-template/tabs.html.tmpl (пример дан для версии Bugzilla 3.2)
+
